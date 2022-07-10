@@ -139,9 +139,9 @@ public class FlutterQrBarScannerPlugin implements MethodCallHandler, QrReaderCal
             if (readingInstance.reader != null) {
                 readingInstance.reader.stop();
             }
-            if (readingInstance.textureEntry != null) {
-                readingInstance.textureEntry.release();
-            }
+            //if (readingInstance.textureEntry != null) {
+            //    readingInstance.textureEntry.release();
+            //}
         }
         readingInstance = null;
         lastHeartbeatTimeout = null;
